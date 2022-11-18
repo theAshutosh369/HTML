@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+   
+</head>
+<body>
+    <H2>this is forms tutorial</H2>
+    <form action="backend.php">
+        <!-- div 
+        gives a block simply or we can use direct br tag also but dont use it its not a good practice  -->
+        <div>
+           name : <input type="text" name="myName">
+        </div><br>
+        <!-- name attribute imp ahe nahitr backend madhe input nahi janar always use name attribute -->
+
+        <!-- name 
+        it is used in backend to identify the attribute -->
+        <div>
+            rollno : <input type="text" name="myRollno">
+        </div><br>
+
+        <!-- label 
+        title la click kel ki apoap input ghet hyasathi ahe -->
+
+        
+
+        <div>
+            <label for="myEmail">Email :</label>
+            <input type="email" id="myEmail" >
+        </div><br>
+
+
+        <div>
+            date : <input type="date""><br>
+        </div><br>
+
+
+        <div>
+            number : <input type="number">
+        </div><br>
+
+
+        <label for="check">are you elligible :</label>
+        <div>
+             yes : <input type="checkbox"  name="box" checked>
+
+             <!-- attribute 'checked' likha to pehle se hi check mark ata h -->
+        </div><br>
+
+        <div>
+            gender : <br>
+             male :<input type="radio" name="g"> female :<input type="radio" name="g"> other :<input type="radio" name="g">
+        </div><br>
+        <!-- name same dil ki konthi ekch select krta yeil -->
+
+        <div>
+            write about yourself : <br>
+            <textarea name="paragraph" cols="30" rows="10"></textarea>
+        </div> <br>
+
+        <div>
+            <label for="sel"> car select :</label>
+            <select name="mySelect" id="sel">
+
+                <option value="ind">indica</option>
+                <option value="swf" selected>swift</option> 
+
+                <!-- selected default sarkh kam krel -->
+
+                <option value="honda">honda</option>
+                <option value="suz">suzuki</option>
+
+            </select>
+        </div><br>
+    
+
+        <!-- to submit the form  -->
+        <input type="submit" value="Submit now"><br>
+
+        <!-- to reset the from -->
+        <input type="reset" value="reset this">
+
+    </form>
+    
+</body>
+</html>
+
+<h1>Extra form </h1>
+
+<form action="mailto:theashutosh369@gmail.com" method="post" enctype="text/plain">
+    <div>
+        Name : <input type="text" name="Myname">
+    </div>
+
+    <div>
+        Rollno : <input type="number" name="Myroll">
+    </div>
+
+    <div>
+        <label for="MyEmail">Email : </label>
+        <input type="email" id="MyEmail">
+    </div>
+
+    <div>
+        Date : <input type="date" name="todaysDate" id="date">
+    </div>
+
+    <div>
+        Are u eligible : 
+        yes : <input type="checkbox" name="ch" id="che">
+    </div>
+
+    <div>
+        gender: <br>
+        male : <input type="radio" name="m">
+        female : <input type="radio" name="m">
+
+    </div><br>
+
+    <div>
+        write about yourself : <br>
+        <textarea name="rectangle" id="about" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+        car :
+        <select name="random" id="car">
+            <option value="suziki">suzuki</option>
+            <option value="mini">mini</option>
+        </select>
+    </div>
+
+    
+    <input type="submit" value="submit kr de bhai "><br>
+
+    <input type="reset" value="reset kr gdbd hogai">
+
+
+</form>
